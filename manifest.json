@@ -1,0 +1,44 @@
+{
+    "author": "Plugtopus Agency",
+    "background": {
+        "persistent": true,
+        "scripts": ["js/lib.js", "js/events.js"]
+    },
+    "browser_action": {
+        "default_icon": "img/icon-48.png",
+        "default_popup": "html/popup.html"
+    },
+    "content_scripts": [{
+        "all_frames": true,
+        "exclude_matches": ["*://vk.com/notifier.php*", "*://vk.com/al_*.php*", "*://vk.com/dev*", "*://vk.com/apps?act=manage*", "*://vk.com/upload_fails.php*", "*://vk.com/ads_rotate.php*", "*://vk.com/share.php*", "*://vk.com/like.php*", "*://vk.com/adscreate*", "*://vk.com/wkview.php*", "*://vk.com/bugs", "*://vk.com/bugs?*", "*://vk.com/login.php*", "*://vk.com/q_frame.php*", "*://vk.com/login.php*", "*://vk.com/about*", "*://vk.com/jobs*", "*://vk.com/*.svg*", "*://vk.com/widget_*.php*"],
+        "js": ["js/lib.js", "js/mainStart.js"],
+        "matches": ["*://vk.com/*"],
+        "run_at": "document_start"
+    }, {
+        "all_frames": true,
+        "exclude_matches": ["*://vk.com/notifier.php*", "*://vk.com/al_*.php*", "*://vk.com/dev*", "*://vk.com/apps?act=manage*", "*://vk.com/upload_fails.php*", "*://vk.com/ads_rotate.php*", "*://vk.com/share.php*", "*://vk.com/like.php*", "*://vk.com/adscreate*", "*://vk.com/wkview.php*", "*://vk.com/bugs", "*://vk.com/bugs?*", "*://vk.com/login.php*", "*://vk.com/q_frame.php*", "*://vk.com/login.php*", "*://vk.com/about*", "*://vk.com/jobs*", "*://vk.com/*.svg*", "*://vk.com/widget_*.php*"],
+        "js": ["js/mainEnd.js"],
+        "matches": ["*://vk.com/*"],
+        "run_at": "document_end"
+    }],
+    "default_locale": "ru",
+    "description": "__MSG_Desc__",
+    "homepage_url": "https://plugtopus.agency",
+        "icons": {
+        "128": "img/icon-128.png",
+        "48": "img/icon-48.png",
+        "64": "img/icon-64.png"
+    },
+    "manifest_version": 2,
+    "minimum_chrome_version": "32",
+    "name": "__MSG_Name__",
+    "options_page": "html/options.html",
+    "options_ui": {
+        "chrome_style": true,
+        "page": "html/options.html"
+    },
+    "permissions": ["*://*.vk.com/", "*://vk.com/", "tabs", "storage"],
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "12.3.18.1",
+    "web_accessible_resources": ["css/*.css", "js/injectStart.js", "js/injectEnd.js"]
+}

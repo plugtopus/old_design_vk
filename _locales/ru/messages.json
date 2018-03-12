@@ -1,0 +1,62 @@
+{
+    "Desc": {
+        "description": "",
+        "message": "Расширение поможет вернуть вам, старый дизайн ВК."
+    },
+    "Name": {
+        "description": "",
+        "message": "Старый дизайн ВК"
+    },
+    "developing": {
+        "description": "",
+        "message": "Разработка"
+    },
+    "enable": {
+        "description": "",
+        "message": "Включить или выключить расширение"
+    },
+    "option_audio": {
+        "description": "",
+        "message": "Показывать обложки для альбомов аудио"
+    },
+    "option_cover": {
+        "description": "",
+        "message": "Использовать адаптированные обложки сообществ"
+    },
+    "option_font": {
+        "description": "",
+        "message": "Использовать увеличенные шрифты"
+    },
+    "option_im": {
+        "description": "",
+        "message": "Показывать картинки на кнопках вместо текста в сообщениях"
+    },
+    "option_viewer": {
+        "description": "",
+        "message": "Использовать новый просмотрщик фотографий"
+    },
+    "options": {
+        "description": "",
+        "message": "Настройки"
+    },
+    "save": {
+        "description": "",
+        "message": "Сохранить"
+    },
+    "saved": {
+        "description": "",
+        "message": "Настройки сохранены"
+    },
+    "styleVersion": {
+        "description": "",
+        "message": "Версия расширения"
+    },
+    "support": {
+        "description": "",
+        "message": "Поддержка"
+    },
+    "updateStyle": {
+        "description": "",
+        "message": "Обновить стиль"
+    }
+}
